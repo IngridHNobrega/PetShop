@@ -1,0 +1,232 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EBC351;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #80C2D0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando sombra sutil */
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; /* Adicionando transição suave */
+}
+
+nav ul li a:hover {
+    color: #EBC351; /* Cor de destaque ao passar o mouse */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 8px; /* Aumentando um pouco o padding para melhor usabilidade */
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s; /* Adicionando transição */
+}
+
+.search-bar button:hover {
+    color: #EBC351; /* Cor de destaque ao passar o mouse */
+}
+
+.cart-icon, .user-icon {
+    font-size: 24px;
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s; /* Adicionando transição */
+}
+
+.cart-icon:hover, .user-icon:hover {
+    color: #EBC351; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção de boas-vindas */
+.welcome-section {
+    position: relative;
+    text-align: center;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionando sombra */
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
+/* Lista de produtos */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Adicionando transição */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentando a sombra */
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services, .contact, .registration-form {
+    padding: 20px;
+    text-align: center;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-form label, .registration-form input, .registration-form button {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.registration-form input, .registration-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+    transition: box-shadow 0.3s; /* Adicionando transição */
+}
+
+.registration-form button {
+    background-color: #80C2D0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adicionando transição */
+}
+
+.registration-form button:hover {
+    background-color: #67A1B0; /* Mudando a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+.site-footer {
+    background-color: #393939;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-left p, .footer-center ul li a, .footer-right p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-center ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #303030;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+
+
+
+

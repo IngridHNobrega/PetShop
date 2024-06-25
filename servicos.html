@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETIZ - Serviços</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PETIZ</div>
+        <nav>
+            <ul>
+                <li><a href="acolhiment.html">Acolhimento</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contat.html">Contato e Suporte</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button>🔍</button>
+            </div>
+            <div class="cart-icon">🛒</div>
+            <div class="user-icon"><a href="cadastro.html">👤</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="services">
+            <h1>Nossos Serviços</h1>
+            <p>Selecione o serviço desejado para seu pet:</p>
+            <div class="service-options">
+                <div class="service-option">
+                    <input type="radio" id="service-banho-tosa" name="service" value="Banho e Tosa">
+                    <label for="service-banho-tosa">Banho e Tosa</label>
+                </div>
+                <div class="service-option">
+                    <input type="radio" id="service-adestramento" name="service" value="Adestramento de Cães">
+                    <label for="service-adestramento">Adestramento de Cães</label>
+                </div>
+                <div class="service-option">
+                    <input type="radio" id="service-veterinaria" name="service" value="Veterinária">
+                    <label for="service-veterinaria">Veterinária</label>
+                </div>
+                <!-- Adicione mais serviços conforme necessário -->
+            </div>
+            <div class="appointment">
+                <h2>Agendamento</h2>
+                <form id="appointment-form" onsubmit="return handleFormSubmit(event)">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Horário:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="tele-busca">Tele-busca:</label>
+                    <input type="checkbox" id="tele-busca" name="tele-busca">
+
+                    <button type="submit">Agendar</button>
+                </form>
+                <div id="confirmation-message" class="confirmation-message" style="display: none;">
+                    <p>O agendamento foi realizado com sucesso!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>

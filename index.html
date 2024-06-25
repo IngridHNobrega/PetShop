@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETIZ - Acolhimento</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluindo o Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <!-- Incluindo o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Corrigindo a tag link para importar as fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">PETIZ</div>
+        <nav>
+            <ul>
+                <li><a href="acolhimento.html">Acolhimento</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato e Suporte</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button>🔍</button>
+            </div>
+            <div class="cart-icon"><a href="carrinho.html">🛒</a></div>
+            <div class="user-icon"><a href="cadastro.html">👤</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="welcome-section">
+            <div class="carousel">
+                <div><img src="promo.png" alt="Promoção 1"></div>
+                <div><img src="promo2.png" alt="Promoção 2"></div>
+                <div><img src="promo3.png" alt="Promoção 3"></div>
+            </div>
+        </div>
+    </main>
+    <!-- Incluindo o Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <!-- Script para inicializar o Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true, // Ativa o modo automático
+                autoplaySpeed: 3000, // Intervalo de tempo em milissegundos (3 segundos)
+                dots: true, // Exibe os pontos de navegação
+                arrows: false, // Esconde as setas de navegação (opcional)
+                infinite: true, // Habilita o loop infinito
+                speed: 200, // Velocidade da transição em milissegundos
+                slidesToShow: 1, // Quantidade de slides visíveis ao mesmo tempo
+                slidesToScroll: 1 // Quantidade de slides a serem rolados por vez
+            });
+        });
+    </script>
+    <!-- Seu script personalizado -->
+    <script src="script.js"></script>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>PETIZ</h3>
+                <p>Somos apaixonados por animais! Aqui no PETIZ, oferecemos serviços de qualidade para o seu pet.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="acolhimentgi.html">Acolhimento</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contat.html">Contato e Suporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contato</h3>
+                <p>Email: contato@petiz.com</p>
+                <p>Telefone: (61) 1234-5555</p>
+                <p>Endereço: Rua dos Animais, 123, Brasília, DF</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PETIZ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
